@@ -1,8 +1,130 @@
+/* Helper
+-------------------------------------------------- */
+#bm-img {
+    height: 32px;
+    width: 32px;
+    position: relative;
+    top: -5px;
+}
+
+.panel {
+    background: #777777;
+}
+
+.center {
+    text-align: center;
+}
+
+.pink {
+    color: hotpink;
+}
+
+.my-well {
+    min-height: 20px;
+    padding: 19px;
+    background: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px #EAEAEA;
+    max-width: 450px;
+    margin: 20px auto;
+}
+
+/* NAVBAR
+-------------------------------------------------- */
+.navbar {
+  margin-bottom: 0;
+}
+
+/* CUSTOMIZED CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 240px;
+  margin-bottom: 30px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 240px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 240px;
+}
+
+@media (min-width: 768px) {
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+}
+
+/* MARKETING
+-------------------------------------------------- */
+
+.marketing {
+  margin: 60px auto;
+}
+
+.marketing .col-md-4 {
+  text-align: center;
+  font-size: 16px;
+}
+
+.marketing .col-md-4 .glyphicon {
+  font-size: 60px;
+  background-color: #EAEAEA;
+  border-radius: 50%;
+  padding: 40px;
+  color: #444;
+}
+
+
+/* STICKY FOOTER
+-------------------------------------------------- */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
 
 body {
-  font-family: 'Helvetica Neue', serif;
-  font-size: 18px;
+  /* Margin bottom by footer height */
+  margin-bottom: 130px;
+  padding-top: 50px;
 }
+
+.footer,
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 130px;
+  background: #444;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  padding: 5px 0;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+
 
 #badges {
   text-align: center;
